@@ -1,10 +1,31 @@
 # COVID-19 Tracker
 
-### [Live Site](http://covid19stats.systems/)
+A responsive, real-time COVID-19 data visualization dashboard built with React that provides up-to-date statistics on the global pandemic. This application tracks and displays key metrics including infection rates, recovery numbers, and deaths across different countries worldwide.
 
-![c19](https://user-images.githubusercontent.com/42184833/82927789-dd059080-9f9e-11ea-963a-36825cc0a8a4.png)
+## Key Features
 
-I create a COVID-19 Tracker/Stats Application. I'm going to use React with the addition of Charts.js, Material UI, and many different modules.
+- **Global and Country-Specific Data**: Users can view worldwide statistics or select specific countries to see localized COVID-19 information.
+- **Interactive Charts**: Utilizes Chart.js to display COVID-19 data through intuitive line and bar charts, showing both historical trends and current statistics.
+- **Real-Time Updates**: Integrates with the COVID-19 Mathdro API to fetch the latest pandemic data.
+- **Responsive Design**: Built with Material UI to ensure a seamless experience across all devices.
+- **Visual Data Representation**: Implements CountUp for animated number transitions to enhance data visualization.
+
+## Technical Stack
+
+- **Frontend Framework**: React.js
+- **UI Components**: Material UI
+- **Data Visualization**: Chart.js with react-chartjs-2
+- **API Integration**: Axios for data fetching
+- **Animation Effects**: React CountUp for numerical animations
+- **Styling**: CSS Modules for component-scoped styling
+
+## Architecture
+
+The application follows a modular component-based architecture:
+
+- **Cards Component**: Displays key metrics (infected, recovered, deaths) with visual indicators
+- **CountryPicker Component**: Dropdown interface allowing users to select specific countries
+- **Chart Component**: Renders different chart types based on selected data view (global vs. country-specific)
 
 API used: https://covid19.mathdro.id/api
 
@@ -14,9 +35,3 @@ Setup:
 
 - run `npm i`
 - run `npm start`
-
->***Use Gitpod, a free online Development environment for GitHub.***
-
-[![DIp15739 on gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DIp15739/Corona-Tracker-React)
-
-![c19](https://user-images.githubusercontent.com/42184833/83008689-315a5000-a033-11ea-8da8-499071826195.gif)
